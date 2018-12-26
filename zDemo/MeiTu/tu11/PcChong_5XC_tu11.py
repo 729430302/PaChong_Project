@@ -2,7 +2,9 @@ from bs4 import BeautifulSoup
 import requests,threading
 import re
 import time
+import os
 
+os.makedirs('G:/PaChong/MeiTu/tu11', exist_ok=True)
 IP = '211.20.200.38:3128'
 UA = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1'
 header = {'User-Agent': UA}
@@ -66,7 +68,7 @@ def for_list_02(imgs):
         save_img(img, name)
 
 def save_img(img, name):
-    with open('G:\PaChong\A11\ %s.jpg' % name, 'wb') as f:
+    with open('G:\PaChong\MeiTu\/tu11\ %s.jpg' % name, 'wb') as f:
         f.write(img)
 
 def main(num1, num2):

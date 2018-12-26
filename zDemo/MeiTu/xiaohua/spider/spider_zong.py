@@ -4,8 +4,8 @@ from urllib import request
 from bs4 import BeautifulSoup
 import re
 import os
-os.makedirs('D:/A1', exist_ok=True)
-os.makedirs('D:/A2', exist_ok=True)
+
+os.makedirs('G:/PaChong/MeiTu/xiaoha', exist_ok=True)
 
 x = 0
 start_url = 'http://www.xiaohuar.com/p-6-'
@@ -38,7 +38,7 @@ for i in range(1, 28):
         data = request.urlopen(req).read()
         # 保存图片
         x = x + 1
-        with open('D:\A1\%s.jpg' % str(x), 'wb') as f:
+        with open('G:\PaChong\MeiTu\/xiaoha\ %s.jpg' % str(x), 'wb') as f:
             f.write(data)
 
 
@@ -77,5 +77,5 @@ for i in range(28, 46):
         data = request.urlopen(req).read()
         # 保存图片
         x = x + 1
-        with open('D:\A2\%s.jpg' % str(x), 'wb') as f:
+        with open('G:\PaChong\MeiTu\/xiaoha\ %s.jpg' % str(x), 'wb') as f:
             f.write(data)

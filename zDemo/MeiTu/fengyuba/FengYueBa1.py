@@ -9,9 +9,9 @@ import threading
 import requests
 from pyquery import PyQuery as pq
 
-os.makedirs('G:/PaChong/FengYueBa', exist_ok=True)
-path = 'G:\PaChong\FengYueBa\ %s.gif'
-txt_path = 'G:/PaChong/FengYueBa_log.txt'
+os.makedirs('G:/PaChong/MeiTu/FengYueBa', exist_ok=True)
+path = 'G:\PaChong\MeiTu\FengYueBa\ %s.gif'
+txt_path = 'G:/PaChong/MeiTu/FengYueBa_log.txt'
 
 def header():
     user_agent_list = [
