@@ -8,8 +8,8 @@ import threading
 from bs4 import BeautifulSoup
 import requests
 
-os.makedirs('E:/PaChong/meinvtupian1', exist_ok=True)
-path = 'E:\PaChong\meinvtupian1\ %s.gif'
+os.makedirs('G:/PaChong/meinvtupian1', exist_ok=True)
+path = 'G:\PaChong\meinvtupian1\ %s.gif'
 
 
 def header():

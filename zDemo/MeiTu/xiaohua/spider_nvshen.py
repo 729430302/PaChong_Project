@@ -73,6 +73,6 @@ class Spider:
 
 
 if __name__ == '__main__':
-    os.makedirs('G:/PaChong/A5', exist_ok=True)
+    os.makedirs('G:/PaChong/A7', exist_ok=True)
     s = Spider()
     s.run()

@@ -8,7 +8,7 @@ import threading
 import requests
 from pyquery import PyQuery as pq
 
-os.makedirs('E:/PaChong/meinvtupian', exist_ok=True)
+os.makedirs('G:/PaChong/meinvtupian', exist_ok=True)
 
 
 def header():
@@ -180,7 +180,7 @@ if __name__ == '__main__':
             target=main,
             args=(
                 'http://www.umei.cc/meinvtupian/1.htm',
-                'E:\PaChong\meinvtupian\ %s.jpg',
+                'G:\PaChong\meinvtupian\ %s.jpg',
                 # 'F:\PaChong\A1\ %s.jpg',
                 i,
                 j

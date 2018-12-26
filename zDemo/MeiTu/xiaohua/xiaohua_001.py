@@ -54,7 +54,7 @@ for i in range(1, 99, 8):
             print(data)
             inter_time = time.time()
             j = j + 1
-            with open('G:\PaChong\A6\ %s.jpg' % j, 'wb') as f:
+            with open('G:\PaChong\A7\ %s.jpg' % j, 'wb') as f:
                 f.write(data)
 
 
