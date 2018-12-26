@@ -8,7 +8,7 @@ import threading
 import requests
 from pyquery import PyQuery as pq
 
-os.makedirs('G:/PaChong/meinvtupian', exist_ok=True)
+os.makedirs('G:/PaChong/MeiTu/umei', exist_ok=True)
 
 
 def header():
@@ -133,7 +133,7 @@ def main(url, path, num1, num2):
 
                             log = '正在下载：' + str(name) + '，地址：' + str(img)
 
-                            with open('E:/PaChong/log.txt', 'a', encoding='utf-8') as f:
+                            with open('G:/PaChong/MeiTu/umei_log.txt', 'a', encoding='utf-8') as f:
                                 f.writelines(log)
                                 f.write('\n')
 
@@ -180,7 +180,7 @@ if __name__ == '__main__':
             target=main,
             args=(
                 'http://www.umei.cc/meinvtupian/1.htm',
-                'G:\PaChong\meinvtupian\ %s.jpg',
+                'G:\PaChong\MeiTu\/umei\ %s.jpg',
                 # 'F:\PaChong\A1\ %s.jpg',
                 i,
                 j
