@@ -84,18 +84,15 @@ def main(num1, num2):
 
 
 if __name__ == '__main__':
-    mthread1 = threading.Thread(target=main, args=(1, 8))
-    mthread2 = threading.Thread(target=main, args=(9, 16))
-    mthread3 = threading.Thread(target=main, args=(17, 24))
-    mthread4 = threading.Thread(target=main, args=(25, 32))
-    mthread5 = threading.Thread(target=main, args=(33, 37))
-    # 启动刚刚创建的线程
-    mthread1.start()
-    mthread2.start()
-    mthread3.start()
-    mthread4.start()
-    mthread5.start()
+    y = 0
+    for i in range(1, 37, 3):
+        y = y + 1  # 计数的
 
+        j = i + 3
+        mthread = threading.Thread(target=main, args=(i, j))
+        print('第' + str(y) + '个线程，下载第' + str(i) + '~' + str(j) + '页资源，开始下载~~')
+        print()
+        mthread.start()
 
 
 #获取地址
